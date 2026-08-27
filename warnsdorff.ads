@@ -4,9 +4,9 @@
 package Warnsdorff is
    
    -- Define the tie-breaking variants for the algorithm.
-   -- Standard: Basic Warnsdorff (first minimum degree found).
+   -- Basic: Basic Warnsdorff (first minimum degree found).
    -- Pohl: Squirrel and Cull's rule (tie-break using minimum sum of neighbors' degrees).
-   type Strategy_Type is (Standard, Pohl);
+   type Strategy_Type is (Basic, Pohl);
    
    -- Unconstrained 2D array for the chessboard.
    -- Values represent the sequence number of the knight's visit (1 to N^2).
